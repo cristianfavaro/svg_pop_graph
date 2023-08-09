@@ -72,7 +72,7 @@ class Graph{
                 text-anchor="start" 
                 fill="red"
             >
-                ${numberFormater(this.dados[i].para)} (${this.dados[i].nome})
+                ${numberFormater(this.dados[i].para)} (${this.dados[i].nome} | ${this.dados[i]["var"]}%)
             </text>                
             `;
         }
@@ -142,6 +142,7 @@ function load(){
                     "de": filtered[i]["2010"],
                     "para": filtered[i]["2022"],
                     "nome": filtered[i]["NOME DO MUNICÍPIO"],
+                    "var": filtered[i]["Variacao"],
                 });
                 options.innerHTML = "";
             })                      
