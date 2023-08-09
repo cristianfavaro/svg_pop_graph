@@ -23,7 +23,6 @@ const numberFormater = (n) => {
 class Graph{
     constructor(){
         this.dados = [];
-        
     }
     line(){
         this.calcArea();
@@ -31,11 +30,6 @@ class Graph{
         
         let slopes = document.querySelector(".slopes");
         slopes.innerHTML = ""
-
-        const colors = [
-            "#2D3142", "#4F5D75", "#BFC0C0", 
-            "#EF8354", "#DC6BAD"
-        ];
 
         let markup = "";
 
