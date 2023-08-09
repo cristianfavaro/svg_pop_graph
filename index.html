@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grafico - Evolução População</title>
+    <link rel="stylesheet" href="index.css">
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+ 
+  <body>
+    <div class="container">
+        <h4>Vamos por um título aqui</h4>
+        <p>Aqui falamos como usa o gráfico</p>
+
+        <div class="control">
+            Filtre as cidade:
+            <form id="add-new">
+                <input placeholder="nome" id="nome" type="text" required>
+                <input type="submit">
+                <div id="options">
+                
+                </div>
+            </form>
+            
+        </div>
+        
+        <div id="graph-header">
+        </div>
+    
+        <svg viewBox="-100 -40 300 160" xmlns="http://www.w3.org/2000/svg">
+            <!-- Linhas verticais -->
+            <!-- Barras de Guia --> 
+            <g id="area">
+                <line x1="0" y1="0" x2="0" y2="100" stroke="black"></line>
+                <line x1="100" y1="0" x2="100" y2="100" stroke="black"></line>
+            </g>
+        
+            <g class="slopes">
+                <!-- Linhas representandoos dados -->
+            </g>
+            
+        </svg>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="base.js"></script>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,76 @@
+
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    background: #eee;
+    display: block;
+}
+.text{
+    font-size: 5px;
+}
+#add_new{
+    position: relative;
+}
+
+#graph-header{
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+}
+.control{
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#graph-header>span {
+    cursor: pointer;
+    margin: 0.2rem; 
+    padding: 0.2rem;
+    font-weight: 800;
+    font-size: 0.7rem;
+    background-color: #ffc100;;
+    border-radius: 10px;
+}
+
+#graph-header>span:after{
+    display: inline-block;
+    color: red;
+    content: "\00d7"; /* This will render the 'X' */
+}
+
+form>#nome{
+    width: 200px;
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    max-height: 300px;
+    overflow: auto;
+    z-index: 2;
+    background-color: white;
+}
+#options>span {
+    margin: 0.2rem;
+    color: black;
+}
+
+.text-0 { fill: #2D3142; }
+.text-1 { fill: blue; ; }
+.text-2 { fill: green; }
+.text-3 { fill: #EF8354; }
+.text-4 { fill: #DC6BAD; }
+
+.slope-0 { stroke: #2D3142; }
+.slope-1 { stroke: blue; }
+.slope-2 { stroke: green; }
+.slope-3 { stroke: #EF8354; }
+.slope-4 { stroke: #DC6BAD; }
